@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8B92F3F21C906CF200FFE103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F3F11C906CF200FFE103 /* AppDelegate.swift */; };
-		8B92F3F41C906CF200FFE103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F3F31C906CF200FFE103 /* ViewController.swift */; };
+		8B92F3F41C906CF200FFE103 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F3F31C906CF200FFE103 /* LoginViewController.swift */; };
 		8B92F3F71C906CF200FFE103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3F51C906CF200FFE103 /* Main.storyboard */; };
 		8B92F3F91C906CF200FFE103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3F81C906CF200FFE103 /* Assets.xcassets */; };
 		8B92F3FC1C906CF200FFE103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3FA1C906CF200FFE103 /* LaunchScreen.storyboard */; };
+		8BF7B3891C9093F4005E6FCB /* StaffProyectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */; };
+		8BF7B38B1C909591005E6FCB /* StaffAlumnosTecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */; };
+		8BF7B38D1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */; };
+		8BF7B38F1C9098CB005E6FCB /* AdminProyectosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */; };
+		8BF7B3911C9098E7005E6FCB /* AdminDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */; };
+		8BF7B3931C909906005E6FCB /* SocioProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B92F3EE1C906CF200FFE103 /* MovilesMPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovilesMPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B92F3F11C906CF200FFE103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B92F3F31C906CF200FFE103 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B92F3F31C906CF200FFE103 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B92F3F61C906CF200FFE103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B92F3F81C906CF200FFE103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B92F3FB1C906CF200FFE103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B92F3FD1C906CF200FFE103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffProyectViewController.swift; sourceTree = "<group>"; };
+		8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffAlumnosTecViewController.swift; sourceTree = "<group>"; };
+		8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffBeneficiariosViewController.swift; sourceTree = "<group>"; };
+		8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminProyectosViewController.swift; sourceTree = "<group>"; };
+		8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDetalleViewController.swift; sourceTree = "<group>"; };
+		8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioProyectoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				8B92F3F11C906CF200FFE103 /* AppDelegate.swift */,
-				8B92F3F31C906CF200FFE103 /* ViewController.swift */,
+				8B92F3F31C906CF200FFE103 /* LoginViewController.swift */,
 				8B92F3F51C906CF200FFE103 /* Main.storyboard */,
 				8B92F3F81C906CF200FFE103 /* Assets.xcassets */,
 				8B92F3FA1C906CF200FFE103 /* LaunchScreen.storyboard */,
 				8B92F3FD1C906CF200FFE103 /* Info.plist */,
+				8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */,
+				8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */,
+				8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */,
+				8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */,
+				8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */,
+				8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */,
 			);
 			path = MovilesMPS;
 			sourceTree = "<group>";
@@ -136,8 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B92F3F41C906CF200FFE103 /* ViewController.swift in Sources */,
+				8BF7B3911C9098E7005E6FCB /* AdminDetalleViewController.swift in Sources */,
+				8BF7B38D1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift in Sources */,
+				8BF7B38B1C909591005E6FCB /* StaffAlumnosTecViewController.swift in Sources */,
+				8B92F3F41C906CF200FFE103 /* LoginViewController.swift in Sources */,
+				8BF7B3891C9093F4005E6FCB /* StaffProyectViewController.swift in Sources */,
 				8B92F3F21C906CF200FFE103 /* AppDelegate.swift in Sources */,
+				8BF7B38F1C9098CB005E6FCB /* AdminProyectosViewController.swift in Sources */,
+				8BF7B3931C909906005E6FCB /* SocioProyectoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				8B92F4021C906CF200FFE103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
