@@ -9,11 +9,17 @@
 import UIKit
 
 class StaffProyectViewController: UIViewController {
+    
+    var strNombreProyecto : String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        strNombreProyecto = (self.tabBarController as! StaffProyectTabBarViewController).strNombreProyecto
+        
+        self.title = strNombreProyecto
     }
 
     override func didReceiveMemoryWarning() {

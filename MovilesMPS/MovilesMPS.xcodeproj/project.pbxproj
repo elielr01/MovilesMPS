@@ -7,20 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1A50CB1CB3694800C69C9D /* StaffListaProyectosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A50CA1CB3694800C69C9D /* StaffListaProyectosViewController.swift */; };
+		8B1A50CD1CB36F5600C69C9D /* AlumnoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A50CC1CB36F5600C69C9D /* AlumnoTableViewCell.swift */; };
+		8B1A50CF1CB3717A00C69C9D /* BeneficiarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A50CE1CB3717A00C69C9D /* BeneficiarioTableViewCell.swift */; };
+		8B7881171CD9160D00320055 /* StaffUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7881161CD9160D00320055 /* StaffUser.swift */; };
+		8B7881191CD9161800320055 /* AdminUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7881181CD9161800320055 /* AdminUser.swift */; };
+		8B78811B1CD9163500320055 /* SocioformadorUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78811A1CD9163500320055 /* SocioformadorUser.swift */; };
+		8B78811D1CD9A5FF00320055 /* SocioTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78811C1CD9A5FF00320055 /* SocioTabBarViewController.swift */; };
+		8B7881201CDA1DE300320055 /* Proyecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78811F1CDA1DE300320055 /* Proyecto.swift */; };
+		8B7881221CDA28C700320055 /* Beneficiario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7881211CDA28C700320055 /* Beneficiario.swift */; };
+		8B7881241CDA555100320055 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7881231CDA555100320055 /* Lugar.swift */; };
 		8B92F3F21C906CF200FFE103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F3F11C906CF200FFE103 /* AppDelegate.swift */; };
 		8B92F3F41C906CF200FFE103 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F3F31C906CF200FFE103 /* LoginViewController.swift */; };
 		8B92F3F71C906CF200FFE103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3F51C906CF200FFE103 /* Main.storyboard */; };
 		8B92F3F91C906CF200FFE103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3F81C906CF200FFE103 /* Assets.xcassets */; };
 		8B92F3FC1C906CF200FFE103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F3FA1C906CF200FFE103 /* LaunchScreen.storyboard */; };
+		8BBB18B71CBEAF700028FFB7 /* StaffAlumnosTecAsistenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB18B61CBEAF700028FFB7 /* StaffAlumnosTecAsistenciaViewController.swift */; };
+		8BBB18B91CBECFBE0028FFB7 /* SocioBeneficiariosAsistenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB18B81CBECFBE0028FFB7 /* SocioBeneficiariosAsistenciaViewController.swift */; };
+		8BBB18BB1CBED2F90028FFB7 /* StaffProyectTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB18BA1CBED2F90028FFB7 /* StaffProyectTabBarViewController.swift */; };
 		8BF7B3891C9093F4005E6FCB /* StaffProyectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */; };
 		8BF7B38B1C909591005E6FCB /* StaffAlumnosTecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */; };
-		8BF7B38D1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */; };
+		8BF7B38D1C9095AC005E6FCB /* SocioBeneficiariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38C1C9095AC005E6FCB /* SocioBeneficiariosViewController.swift */; };
 		8BF7B38F1C9098CB005E6FCB /* AdminProyectosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */; };
 		8BF7B3911C9098E7005E6FCB /* AdminDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */; };
 		8BF7B3931C909906005E6FCB /* SocioProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B1A50CA1CB3694800C69C9D /* StaffListaProyectosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffListaProyectosViewController.swift; sourceTree = "<group>"; };
+		8B1A50CC1CB36F5600C69C9D /* AlumnoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlumnoTableViewCell.swift; sourceTree = "<group>"; };
+		8B1A50CE1CB3717A00C69C9D /* BeneficiarioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeneficiarioTableViewCell.swift; sourceTree = "<group>"; };
+		8B7881161CD9160D00320055 /* StaffUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffUser.swift; sourceTree = "<group>"; };
+		8B7881181CD9161800320055 /* AdminUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUser.swift; sourceTree = "<group>"; };
+		8B78811A1CD9163500320055 /* SocioformadorUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioformadorUser.swift; sourceTree = "<group>"; };
+		8B78811C1CD9A5FF00320055 /* SocioTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioTabBarViewController.swift; sourceTree = "<group>"; };
+		8B78811F1CDA1DE300320055 /* Proyecto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proyecto.swift; sourceTree = "<group>"; };
+		8B7881211CDA28C700320055 /* Beneficiario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beneficiario.swift; sourceTree = "<group>"; };
+		8B7881231CDA555100320055 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
 		8B92F3EE1C906CF200FFE103 /* MovilesMPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovilesMPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B92F3F11C906CF200FFE103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B92F3F31C906CF200FFE103 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -28,9 +51,12 @@
 		8B92F3F81C906CF200FFE103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B92F3FB1C906CF200FFE103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B92F3FD1C906CF200FFE103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBB18B61CBEAF700028FFB7 /* StaffAlumnosTecAsistenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffAlumnosTecAsistenciaViewController.swift; sourceTree = "<group>"; };
+		8BBB18B81CBECFBE0028FFB7 /* SocioBeneficiariosAsistenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioBeneficiariosAsistenciaViewController.swift; sourceTree = "<group>"; };
+		8BBB18BA1CBED2F90028FFB7 /* StaffProyectTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffProyectTabBarViewController.swift; sourceTree = "<group>"; };
 		8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffProyectViewController.swift; sourceTree = "<group>"; };
 		8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffAlumnosTecViewController.swift; sourceTree = "<group>"; };
-		8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffBeneficiariosViewController.swift; sourceTree = "<group>"; };
+		8BF7B38C1C9095AC005E6FCB /* SocioBeneficiariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioBeneficiariosViewController.swift; sourceTree = "<group>"; };
 		8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminProyectosViewController.swift; sourceTree = "<group>"; };
 		8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDetalleViewController.swift; sourceTree = "<group>"; };
 		8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocioProyectoViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +73,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B7881131CD9154D00320055 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				8B7881161CD9160D00320055 /* StaffUser.swift */,
+				8B7881181CD9161800320055 /* AdminUser.swift */,
+				8B78811A1CD9163500320055 /* SocioformadorUser.swift */,
+				8B78811F1CDA1DE300320055 /* Proyecto.swift */,
+				8B7881211CDA28C700320055 /* Beneficiario.swift */,
+				8B7881231CDA555100320055 /* Lugar.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		8B78811E1CD9A6A800320055 /* Socioformador VCs */ = {
+			isa = PBXGroup;
+			children = (
+				8B78811C1CD9A5FF00320055 /* SocioTabBarViewController.swift */,
+				8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */,
+				8BBB18B81CBECFBE0028FFB7 /* SocioBeneficiariosAsistenciaViewController.swift */,
+				8BF7B38C1C9095AC005E6FCB /* SocioBeneficiariosViewController.swift */,
+				8B1A50CE1CB3717A00C69C9D /* BeneficiarioTableViewCell.swift */,
+			);
+			name = "Socioformador VCs";
+			sourceTree = "<group>";
+		};
+		8B7881251CDAFB4300320055 /* Staff VCs */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB18BA1CBED2F90028FFB7 /* StaffProyectTabBarViewController.swift */,
+				8B1A50CA1CB3694800C69C9D /* StaffListaProyectosViewController.swift */,
+				8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */,
+				8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */,
+				8BBB18B61CBEAF700028FFB7 /* StaffAlumnosTecAsistenciaViewController.swift */,
+				8B1A50CC1CB36F5600C69C9D /* AlumnoTableViewCell.swift */,
+			);
+			name = "Staff VCs";
+			sourceTree = "<group>";
+		};
+		8B7881261CDAFB6C00320055 /* Admin VCs */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */,
+				8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */,
+			);
+			name = "Admin VCs";
+			sourceTree = "<group>";
+		};
 		8B92F3E51C906CF200FFE103 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +139,16 @@
 		8B92F3F01C906CF200FFE103 /* MovilesMPS */ = {
 			isa = PBXGroup;
 			children = (
+				8B7881261CDAFB6C00320055 /* Admin VCs */,
+				8B7881251CDAFB4300320055 /* Staff VCs */,
+				8B78811E1CD9A6A800320055 /* Socioformador VCs */,
+				8B7881131CD9154D00320055 /* Objects */,
 				8B92F3F11C906CF200FFE103 /* AppDelegate.swift */,
 				8B92F3F31C906CF200FFE103 /* LoginViewController.swift */,
 				8B92F3F51C906CF200FFE103 /* Main.storyboard */,
 				8B92F3F81C906CF200FFE103 /* Assets.xcassets */,
 				8B92F3FA1C906CF200FFE103 /* LaunchScreen.storyboard */,
 				8B92F3FD1C906CF200FFE103 /* Info.plist */,
-				8BF7B3881C9093F4005E6FCB /* StaffProyectViewController.swift */,
-				8BF7B38A1C909591005E6FCB /* StaffAlumnosTecViewController.swift */,
-				8BF7B38C1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift */,
-				8BF7B38E1C9098CB005E6FCB /* AdminProyectosViewController.swift */,
-				8BF7B3901C9098E7005E6FCB /* AdminDetalleViewController.swift */,
-				8BF7B3921C909906005E6FCB /* SocioProyectoViewController.swift */,
 			);
 			path = MovilesMPS;
 			sourceTree = "<group>";
@@ -155,12 +226,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BF7B3911C9098E7005E6FCB /* AdminDetalleViewController.swift in Sources */,
-				8BF7B38D1C9095AC005E6FCB /* StaffBeneficiariosViewController.swift in Sources */,
+				8B7881221CDA28C700320055 /* Beneficiario.swift in Sources */,
+				8BF7B38D1C9095AC005E6FCB /* SocioBeneficiariosViewController.swift in Sources */,
+				8B7881191CD9161800320055 /* AdminUser.swift in Sources */,
+				8B78811B1CD9163500320055 /* SocioformadorUser.swift in Sources */,
+				8BBB18BB1CBED2F90028FFB7 /* StaffProyectTabBarViewController.swift in Sources */,
+				8B1A50CF1CB3717A00C69C9D /* BeneficiarioTableViewCell.swift in Sources */,
 				8BF7B38B1C909591005E6FCB /* StaffAlumnosTecViewController.swift in Sources */,
+				8B7881241CDA555100320055 /* Lugar.swift in Sources */,
+				8B1A50CD1CB36F5600C69C9D /* AlumnoTableViewCell.swift in Sources */,
+				8B78811D1CD9A5FF00320055 /* SocioTabBarViewController.swift in Sources */,
 				8B92F3F41C906CF200FFE103 /* LoginViewController.swift in Sources */,
 				8BF7B3891C9093F4005E6FCB /* StaffProyectViewController.swift in Sources */,
 				8B92F3F21C906CF200FFE103 /* AppDelegate.swift in Sources */,
+				8B7881171CD9160D00320055 /* StaffUser.swift in Sources */,
+				8BBB18B91CBECFBE0028FFB7 /* SocioBeneficiariosAsistenciaViewController.swift in Sources */,
 				8BF7B38F1C9098CB005E6FCB /* AdminProyectosViewController.swift in Sources */,
+				8B1A50CB1CB3694800C69C9D /* StaffListaProyectosViewController.swift in Sources */,
+				8B7881201CDA1DE300320055 /* Proyecto.swift in Sources */,
+				8BBB18B71CBEAF700028FFB7 /* StaffAlumnosTecAsistenciaViewController.swift in Sources */,
 				8BF7B3931C909906005E6FCB /* SocioProyectoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

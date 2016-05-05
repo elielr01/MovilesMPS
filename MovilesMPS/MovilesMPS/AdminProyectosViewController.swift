@@ -11,6 +11,8 @@ import UIKit
 class AdminProyectosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var proyectosTableView: UITableView!
+    
+    var admin : AdminUser = AdminUser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
