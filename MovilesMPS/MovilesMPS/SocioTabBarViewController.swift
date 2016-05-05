@@ -10,6 +10,7 @@ import UIKit
 
 class SocioTabBarViewController: UITabBarController {
     
+    //Variables utilizadas para reconocer al usuario que inicia seción
     var socio : SocioformadorUser = SocioformadorUser()
     var proyecto : Proyecto = Proyecto()
     var lugar : Lugar = Lugar()
@@ -35,36 +36,44 @@ class SocioTabBarViewController: UITabBarController {
     
     func getProject() {
         
+        //Creo el URL
         let request = NSMutableURLRequest(URL: NSURL(string: "http://localhost/~elielr01/mps/proyectoSocioformador.php")!)
         request.HTTPMethod = "POST"
         
+        //Agrego el cuerpo que es necesario para el POST
         let strPostBody = "id_socio=\(self.socio.id_socioformador)"
         
         request.HTTPBody = strPostBody.dataUsingEncoding(NSUTF8StringEncoding)
         
-        
+        //E inicio sesión.
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+            guard error == nil && data != nil else {                                                          // verifico errores de red
                 print("error=\(error)")
                 return
             }
             
-            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           //errores de http
                 print("statusCode should be 200, but is \(httpStatus.statusCode)")
                 print("response = \(response)")
                 return
             }
             
-            //If doesn't return, it means that theres data.
+            
+            //Si no regresa, significa que hay NSData lista para serializar
+            
+            //Esto es usa para ver cómo nos regresa el php el json.
             /*
              let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
              print("responseString = \(responseString)")*/
             
+            //Intento Serializar
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
                 let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                
+                //Si es -1, significa que sí regresó algo, pero no lo esperado
                 if (responseString != "-1") {
-                    //JSON is good so far, so it's time to parse
+                    //Si sí entra aquí, entonces la información está lista para parsearse.
                     
                     let jsonArray : NSMutableArray = json as! NSMutableArray
                     
@@ -88,36 +97,43 @@ class SocioTabBarViewController: UITabBarController {
     
     func getLugar() {
         
+        //Creo el URL
         let request = NSMutableURLRequest(URL: NSURL(string: "http://localhost/~elielr01/mps/lugarSocioformador.php")!)
         request.HTTPMethod = "POST"
         
+        //Agrego el cuerpo que es necesario para el POST
         let strPostBody = "id_socio=\(self.socio.id_socioformador)"
         
         request.HTTPBody = strPostBody.dataUsingEncoding(NSUTF8StringEncoding)
         
-        
+        //E inicio sesión.
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+            guard error == nil && data != nil else {                                                          // verifico errores de red
                 print("error=\(error)")
                 return
             }
             
-            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // errores de http
                 print("statusCode should be 200, but is \(httpStatus.statusCode)")
                 print("response = \(response)")
                 return
             }
             
-            //If doesn't return, it means that theres data.
+            //Si no regresa, significa que hay NSData lista para serializar
+            
+            //Esto es usa para ver cómo nos regresa el php el json.
             /*
              let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
              print("responseString = \(responseString)")*/
             
+            //Intento Serializar
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
                 let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                
+                //Si es -1, significa que sí regresó algo, pero no lo esperado
                 if (responseString != "-1") {
-                    //JSON is good so far, so it's time to parse
+                    //Si sí entra aquí, entonces la información está lista para parsearse.
                     
                     let jsonArray : NSMutableArray = json as! NSMutableArray
                     

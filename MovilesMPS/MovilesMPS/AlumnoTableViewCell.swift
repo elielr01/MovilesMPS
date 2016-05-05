@@ -10,6 +10,7 @@ import UIKit
 
 class AlumnoTableViewCell: UITableViewCell {
 
+    //Outlets
     @IBOutlet var lbNombreAlumno: UILabel!
     @IBOutlet var swtAsistencia: UISwitch!
     

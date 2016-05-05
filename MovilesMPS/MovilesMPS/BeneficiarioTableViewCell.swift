@@ -9,9 +9,11 @@
 import UIKit
 
 class BeneficiarioTableViewCell: UITableViewCell {
-
+    //Outlets de la celda
     @IBOutlet var lbBeneficiarioNombre: UILabel!
     @IBOutlet var swtAsistencia: UISwitch!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

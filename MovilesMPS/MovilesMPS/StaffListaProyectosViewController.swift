@@ -10,10 +10,11 @@ import UIKit
 
 class StaffListaProyectosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var staff : StaffUser = StaffUser()
-    
+    //Outlets
     @IBOutlet var proyectosTableView: UITableView!
     @IBOutlet var btnCerrarSesion: UIButton!
+    
+    var staff : StaffUser = StaffUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,7 @@ class StaffListaProyectosViewController: UIViewController, UITableViewDataSource
         proyectosTableView.reloadData()
 
         btnCerrarSesion.layer.cornerRadius = 12
-        
-        
+
         
     }
     
@@ -46,11 +46,13 @@ class StaffListaProyectosViewController: UIViewController, UITableViewDataSource
         if segue.identifier == "staffSegue" {
             let view = segue.destinationViewController as! StaffProyectTabBarViewController
             
+            //Le agrego el nombre del proyecto al título de la vista destino
             view.strNombreProyecto = (self.proyectosTableView.cellForRowAtIndexPath(self.proyectosTableView.indexPathForSelectedRow!))?.textLabel?.text
         }
 
      }
  
+    // MARK: - TableViewController Methods
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

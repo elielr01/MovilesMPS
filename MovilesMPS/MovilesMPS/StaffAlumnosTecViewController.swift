@@ -21,10 +21,9 @@ class StaffAlumnosTecViewController: UIViewController, UITableViewDataSource, UI
         // Do any additional setup after loading the view.
 
         
-        
+        //Información Dummy sólo para verificar funcionalidad
         arrstrNames = ["César Armando Galván", "Ángel González Galván", "Melisa Alejandra González Aguirre", "María de Nicole Paulina Barbosa Ramírez"]
-        
-        arrboolAsistencias = [Bool](count: arrstrNames.count, repeatedValue: false)
+        arrboolAsistencias = [Bool](count: arrstrNames.count, repeatedValue: true)
         
         alumnosTableView.delegate = self
         alumnosTableView.dataSource = self
@@ -49,9 +48,13 @@ class StaffAlumnosTecViewController: UIViewController, UITableViewDataSource, UI
         // Pass the selected object to the new view controller.
         
         let view = segue.destinationViewController as! StaffAlumnosTecAsistenciaViewController
+        
+        //le paso mi arreglo de nombres y booleanos para que tome asistencia
         view.arrstrNames = self.arrstrNames
         view.arrboolAsistencias = self.arrboolAsistencias
     }
+    
+    // MARK: - TableViewController Methods
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrstrNames.count

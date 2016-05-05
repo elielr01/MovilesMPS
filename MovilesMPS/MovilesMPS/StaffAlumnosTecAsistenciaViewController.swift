@@ -58,6 +58,8 @@ class StaffAlumnosTecAsistenciaViewController: UIViewController, UITableViewData
         
         return cell
     }
+    
+    //Se toma asistencia de los alumnos Socioformadores
     @IBAction func cambioAsistencia(sender: UISwitch) {
         arrboolAsistencias[sender.tag] = sender.on
     }

@@ -1,5 +1,5 @@
 //
-//  StaffBeneficiariosAsistenciaViewController.swift
+//  SocioBeneficiariosAsistenciaViewController.swift
 //  MovilesMPS
 //
 //  Created by Elí Emmanuel on 4/13/16.
@@ -10,8 +10,9 @@ import UIKit
 
 class SocioBeneficiariosAsistenciaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var arrstrNames : [String]!
+    //var arrstrNames : [String]!
     var arrboolAsistencias : [Bool]!
+    var arrBeneficiarios : [Beneficiario] = [Beneficiario]()
     
     @IBOutlet var beneficiariosTableView: UITableView!
     override func viewDidLoad() {
@@ -44,19 +45,21 @@ class SocioBeneficiariosAsistenciaViewController: UIViewController, UITableViewD
  
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrstrNames.count
+        return arrBeneficiarios.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("beneficiarioCell") as! BeneficiarioTableViewCell
         
-        cell.lbBeneficiarioNombre.text = arrstrNames[indexPath.row]
+        cell.lbBeneficiarioNombre.text = arrBeneficiarios[indexPath.row].nombre
         cell.swtAsistencia.on = arrboolAsistencias[indexPath.row]
         cell.swtAsistencia.enabled = true
         cell.swtAsistencia.tag = indexPath.row
         
         return cell
     }
+    
+    //Se activa para tomar asistencia a un beneficiario
 
     @IBAction func cambioAsistencia(sender: UISwitch) {
         
